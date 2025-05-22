@@ -321,6 +321,11 @@
 import person from "../../assets/images/person.jpeg"
 import person2 from "../../assets/images/person2.jpeg"
 import person3 from "../../assets/images/person3.jpeg"
+import person4 from "../../assets/images/person4.jpg"
+import person5 from "../../assets/images/person5.jpg"
+import girl from "../../assets/images/girl.jpg"
+import person7 from "../../assets/images/person7.jpg"
+import person8 from "../../assets/images/person8.jpg"
 
 
 import { useState, useEffect, useRef } from 'react';
@@ -329,35 +334,67 @@ import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: "Sophia Williams",
-    role: "Small Business Owner",
+    name: " Jordan M.",
+    role: "Tech Entrepreneur, California",
     image: person,
-    content: "This credit card service transformed how I manage my business expenses. The rewards program is incredible and the customer support is always there when I need it.",
+    content: "EaseWithdraw made managing my crypto and traditional finances effortless. Their platform bridges the gap between crypto wallets and real-world spending. I use their crypto card for everyday purchases — no hassles, just convenience!",
     rating: 5,
   },
   {
     id: 2,
     name: "Alex Johnson",
-    role: "Freelance Designer",
+    role: "Freelance Designer, New York",
     image: person2,
-    content: "I've tried several credit cards, but this one stands out with its low interest rates and flexible payment options. Perfect for my irregular income pattern!",
+    content: "I was skeptical about mixing crypto with personal finance tools, but EaseWithdraw blew me away. Their credit solutions are transparent, fast, and super flexible. It's like having a digital bank that actually works for you.",
     rating: 5,
   },
   {
     id: 3,
     name: "Michael Chen",
-    role: "Tech Entrepreneur",
+    role: "Crypto investor, Texas",
     image: person3,
-    content: "The travel benefits and points system have saved me thousands on business trips. The mobile app is intuitive and makes managing finances on the go a breeze.",
+    content: "Finally, a service that makes crypto usable in the real world. With EaseWithdraw, I can convert and spend crypto in seconds — whether it’s paying for lunch or booking a flight. It’s the future of finance, here today!",
     rating: 4,
   },
   {
     id: 4,
-    name: "Olivia Rodriguez",
-    role: "Marketing Executive",
-    image: person,
-    content: "What impressed me most was how quickly I was approved and how the team helped me set up autopay. Haven't missed a payment since and my credit score has improved significantly.",
+    name: "Nina T.",
+    role: "Financial Analyst,  Florida",
+    image: girl,
+    content:"Security is everything in finance. EaseWithdraw has consistently proven itself with secure transactions, excellent customer support, and instant alerts. I feel safe and empowered using their tools.",
     rating: 5,
+  },
+  {
+    id: 5,
+    name: "Kevin H",
+    role: "eCommerce Business Owner,   Illinois",
+    image: person4,
+    content:"EaseWithdraw lives up to its name. Withdrawals are lightning fast, and the entire process feels seamless. Whether it's fiat or crypto, moving my money is never a hassle anymore.",
+    rating: 2,
+  },
+  {
+    id: 6,
+    name: "Hardy Max.",
+    role: "Digital Marketer,  Georgia",
+    image: person5,
+    content:"Their dashboard is a game changer — I can track spending, crypto balances, and credit limits in one place. EaseWithdraw is perfect for anyone who wants smarter control of their finances.",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Emily W.",
+    role: "Remote Consultant,colorado",
+    image: person7,
+    content:"EaseWithdraw is the only platform I trust for handling both crypto and credit services. Whether I need to convert Bitcoin or use my card for a hotel booking, it just works — no delays, no confusion.",
+    rating: 3,
+  },
+  {
+    id: 8,
+    name: "Samantha L.",
+    role: "travel Blogger,  Nevada",
+    image: person8,
+    content:"EaseWithdraw gives me control over my money — crypto or cash. It's like having a global bank in my pocket. I can invest, spend, and save, all without switching between apps.",
+    rating: 4,
   },
 ];
 

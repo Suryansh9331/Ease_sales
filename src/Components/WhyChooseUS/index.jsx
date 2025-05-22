@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Star, Shield, CreditCard, Clock, User, Zap, CheckCircle, TrendingUp } from "lucide-react";
 
-export default function WhyChooseUs() {
+export default function WhyChooseUs({ onTriggerPopup }) {
   const [isVisible, setIsVisible] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   
@@ -195,8 +195,8 @@ export default function WhyChooseUs() {
           ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="relative inline-block group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 via-purple-600 to-amber-400 rounded-full opacity-75 blur  animate-pulse"></div>
-            <button 
-              className="relative px-10 py-4 rounded-full text-white font-medium text-lg shadow-xl bg-gradient-to-r from-purple-600 to-purple-900 hover:from-purple-700 hover:to-purple-900  duration-300 hover:border-2   "
+            <button  onClick={onTriggerPopup}
+              className="relative px-10 py-4 cursor-pointer rounded-full text-white font-medium text-lg shadow-xl bg-gradient-to-r from-purple-600 to-purple-900 hover:from-purple-700 hover:to-purple-900  duration-300 hover:border-2   "
             >
               Apply Now & Get Approved Today
             </button>

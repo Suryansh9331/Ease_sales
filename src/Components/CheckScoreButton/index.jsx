@@ -6,7 +6,7 @@ const CheckScore = ({ setIsOpen }) => {
   const [isDownloading, setIsDownloading] = useState(false);
 
   return (
-    <div className="w-full py-16 px-2 overflow-hidden" style={{ backgroundColor: "#FFFFFF" }}>
+    <div className="w-full py-10 px-2 overflow-hidden" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight" style={{ color: '#11182b' }}>

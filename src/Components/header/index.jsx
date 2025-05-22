@@ -7,7 +7,7 @@ import person3   from "../../assets/images/person3.jpeg"
 import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-export default function Header() {
+export default function Header({ onTriggerPopup }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -49,11 +49,12 @@ export default function Header() {
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-lg sm:text-xl">
               E
             </div>
-            <span className="text-2xl sm:text-xl font-bold text-gray-800">Easewithdraw</span>
+            <span className="text-md lg:text-2xl font-bold text-gray-800">Easewithdraw</span>
           </div>
 
           {/* Get Started button */}
-          <button className="bg-purple-600  text-white px-4 sm:px-6 py-2 rounded-full flex items-center text-sm sm:text-base space-x-1 sm:space-x-2 transform  transition-all duration-300 hover:bg-transparent hover:border-2 hover:text-purple-600  b-2">
+          <button    onClick={onTriggerPopup}
+          className="bg-purple-600 cursor-pointer text-white px-4 sm:px-6 py-2 rounded-full flex items-center text-sm sm:text-base space-x-1 sm:space-x-2 transform  transition-all duration-300 hover:bg-transparent hover:border-2 hover:text-purple-600  b-2">
             <span>Get in Touch</span>
             <ArrowRight size={14} className="sm:hidden" />
             <ArrowRight size={16} className="hidden sm:block" />
@@ -71,24 +72,24 @@ export default function Header() {
               Finance
             </div>
             <div className="bg-white px-4 py-1 rounded-full shadow-sm text-sm font-medium flex items-center">
-              <span>Find Your Solution</span>
+              <span>Start Credit Line</span>
               <span className="ml-2 text-orange-500">🔥</span>
             </div>
           </div>
 
           {/* Main heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight animate-fadeIn">
-           Finance, Reimagined Powered by Crypto
+         No Banks ,No Delays , Just Instant Withdraw
           </h1>
 
           {/* Description */}
           <p className="text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 text-xl">
-           Access credit, invest in assets, and spend smarter — all through your digital wallet. No banks. No credit checks.
+          "Get up to $20000 in crypto credit — no selling, no stress . Instantly unlock a flexible credit line , a crypto-powered card, and an all-in-one investment platform". 
           </p>
 
           {/* Phone mockup - Mobile Only (shown between description and buttons) */}
           <div className="w-full lg:hidden flex justify-center mb-8">
-            <div className="relative w-64 md:w-72 transform hover:scale-105 transition-transform duration-500 animate-float">
+            <div className="relative w-64 md:w-72 transform hover:scale-105 transition-transform duration-500 animate-bounce-slow">
               <div className="absolute -z-10 w-full h-full bg-purple-200 rounded-full blur-3xl opacity-30 bottom-0"></div>
               <img 
                 src={card2} 
@@ -137,11 +138,15 @@ export default function Header() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full flex items-center justify-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <button 
+             onClick={onTriggerPopup}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 cursor-pointer rounded-full flex items-center justify-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg">
               <span>Join the Waitlist</span>
               <ArrowRight size={16} />
             </button>
-            <button className="border  border-purple-600 hover:border-purple-600 text-gray-700 hover:text-purple-600 px-6 py-3 rounded-full flex items-center justify-center space-x-2 transform hover:scale-105 transition-all duration-300 bg-white">
+            <button 
+             onClick={onTriggerPopup}
+            className="border  border-purple-600 hover:border-purple-600 text-gray-700 cursor-pointer hover:text-purple-600 px-6 py-3 rounded-full flex items-center justify-center space-x-2 transform hover:scale-105 transition-all duration-300 bg-white">
               <span>Learn More</span>
               <ArrowRight size={16} />
             </button>
