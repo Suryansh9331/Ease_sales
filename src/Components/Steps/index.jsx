@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HowItWorks() {
   return (
-    <div className="w-full bg-white py-10  lg:pb-38 px-4 overflow-hidden">
+    <div className="w-full bg-white py-30  lg:pb-38  overflow-hidden">
       {/* How It Works Label */}
       <div className="flex justify-center mb-6">
         <div className="bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-lg font-medium flex items-center">
@@ -18,7 +18,7 @@ export default function HowItWorks() {
       </div>
 
       {/* Steps Container with Path */}
-      <div className="relative max-w-6xl mx-auto px-4">
+      <div className="relative max-w-6xl   mx-auto px-4">
         {/* Curved Path - Hidden on mobile */}
         <div className="hidden md:block absolute top-24 left-0 right-0 h-24">
           <svg className="w-full h-full" viewBox="0 0 1000 100" fill="none" xmlns="http://www.w3.org/2000/svg">

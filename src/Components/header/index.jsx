@@ -102,13 +102,13 @@ export default function Header() {
           <div className="w-full lg:hidden flex flex-col items-center justify-center mb-8 space-y-6">
             <div className="flex -space-x-3">
               <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-200">
-                <img src="/api/placeholder/40/40" alt="Customer" className="w-full h-full object-cover" />
+                <img src={person} alt="Customer" className="w-full h-full object-cover" />
               </div>
               <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-200">
-                <img src="/api/placeholder/40/40" alt="Customer" className="w-full h-full object-cover" />
+                <img src={person2} alt="Customer" className="w-full h-full object-cover" />
               </div>
               <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-200">
-                <img src="/api/placeholder/40/40" alt="Customer" className="w-full h-full object-cover" />
+                <img src={person3} alt="Customer" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="text-center">
@@ -157,7 +157,7 @@ export default function Header() {
                 <img src={person2} alt="Customer" className="w-full h-full object-cover" />
               </div>
               <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-200">
-                <img src={person3 ``} alt="Customer" className="w-full h-full object-cover" />
+                <img src={person3} alt="Customer" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="ml-4 border-r border-gray-300 pr-6">
