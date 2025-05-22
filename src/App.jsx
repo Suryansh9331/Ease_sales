@@ -55,7 +55,7 @@ function App() {
     <div className='overflow-hidden'>
       <Header onTriggerPopup={openPopup} />
       <HowItWorks onTriggerPopup={openPopup} />
-      {/* <CheckScore onTriggerPopup={openPopup} /> */}
+      <CheckScore onTriggerPopup={openPopup} />
       <AnimatedCardsGrid onTriggerPopup={openPopup} />
       <ServicesSection onTriggerPopup={openPopup} />
       <WhyChooseUs onTriggerPopup={openPopup} />

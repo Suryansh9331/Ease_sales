@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Download, FileText, ChevronRight } from 'lucide-react';
 
-const CheckScore = ({ setIsOpen }) => {
+const CheckScore = ({ onTriggerPopup }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
 
@@ -10,23 +10,23 @@ const CheckScore = ({ setIsOpen }) => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight" style={{ color: '#11182b' }}>
-          Check Your <span style={{ color: '#9810fa' }}>Free</span> Credit Score  With us
+          Check Your Credit Standing –  <span style={{ color: '#9810fa' }}>Fast, Easy,</span> and Confidential
         </h1>
         
         {/* Subheading */}
         <p className="text-xl md:text-xl mb-8 opacity-80" style={{ color: '#11182b' }}>
-        Instant, secure, and 100% free — know where you stand in just seconds.
+       "Quick, secure, and hassle-free — see your credit standing in seconds."
         </p>
 
         {/* Download Button Container */}
         <div className="relative">
           <button
-             onClick={() => setIsOpen(true)}
             
+            onClick={onTriggerPopup}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             disabled={isDownloading}
-            className={`
+            className={` cursor-pointer
               group relative overflow-hidden rounded-full px-8 py-4 md:px-12 md:py-6
               font-bold text-lg md:text-xl transition-all duration-500 transform
               ${isHovered ? 'scale-105' : 'scale-100'}
@@ -49,7 +49,7 @@ const CheckScore = ({ setIsOpen }) => {
             />
             
             {/* Button Content */}
-            <div className="relative flex items-center gap-4">
+            <div className="relative flex items-center gap-4 ">
               {/* Icon */}
               <div className={`transition-all duration-300 ${isDownloading ? 'animate-spin' : ''}`}>
                 {isDownloading ? (
@@ -61,7 +61,7 @@ const CheckScore = ({ setIsOpen }) => {
               
               {/* Text */}
               <span className="transition-all duration-300">
-                {isDownloading ? 'Preparing Download...' : 'Check Score'}
+                {isDownloading ? 'Preparing Download...' : 'View Credit Report'}
               </span>
               
               {/* Decorative Icon */}
