@@ -28,16 +28,8 @@ export default function Header({ onTriggerPopup }) {
   return (
     <div className="relative w-full h-auto overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100">
       {/* Decorative elements */}
-      <div className="absolute top-28 left-32 opacity-20 animate-spin-slow">
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-          <path d="M25 0L30 20H50L35 32.3607L40 52.3607L25 40L10 52.3607L15 32.3607L0 20H20L25 0Z" fill="#7444FD" />
-        </svg>
-      </div>
-      <div className="absolute bottom-20 right-32 opacity-30 animate-spin-slow">
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-          <path d="M25 0L30 20H50L35 32.3607L40 52.3607L25 40L10 52.3607L15 32.3607L0 20H20L25 0Z" fill="#7444FD" />
-        </svg>
-      </div>
+     
+     
 
       {/* Navbar - Simplified with only logo and button */}
       <nav className={`w-full py-6  lg:py-8 px-4 lg:px-10 md:px-6 transition-all duration-300 z-50 ${

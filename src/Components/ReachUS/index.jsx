@@ -440,7 +440,7 @@ export default function ContactSection({ onTriggerPopup }) {
         {/* Bottom Row: Copyright and Contact Email */}
         <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center pt-6 border-t border-gray-700">
           <div className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
-            © 2025 WWW.Easewithdraw.Com . All rights reserved.
+            © 2025 Easewithdraw All rights reserved.
           </div>
           <div className="text-gray-400 text-xs sm:text-sm text-center sm:text-right order-1 sm:order-2">
             Contact: <a href="mailto:contact@yourcompany.com" className="text-purple-400 hover:text-purple-300 transition-colors duration-300 break-all">info@easewithdraw.com</a>
