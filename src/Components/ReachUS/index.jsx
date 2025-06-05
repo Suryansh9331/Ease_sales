@@ -250,7 +250,7 @@ export default function ContactSection({ onTriggerPopup }) {
 
   const handleCallNow = () => {
     // Replace with your actual phone number
-    window.open('tel:+1 845-207-6579', '_self');
+    window.open('tel:+1 844-403-0233', '_self');
   };
 
   // Social media link handlers
